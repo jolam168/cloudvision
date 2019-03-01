@@ -48,6 +48,34 @@
             </objects>
             <point key="canvasLocation" x="63.75" y="32.74647887323944"/>
         </scene>
+        <!--Bottom Sheet View Controller-->
+        <scene sceneID="AtI-c2-0MG">
+            <objects>
+                <viewController id="BEr-Mo-90B" customClass="BottomSheetViewController" customModule="cloud_vision" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qns-YF-cRT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjV-M8-CRj">
+                                <rect key="frame" x="112" y="269" width="96" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZjV-M8-CRj" firstAttribute="leading" secondItem="7zp-Ys-mOt" secondAttribute="leading" constant="112" id="JIc-rX-zgx"/>
+                            <constraint firstItem="ZjV-M8-CRj" firstAttribute="centerX" secondItem="qns-YF-cRT" secondAttribute="centerX" id="yNU-Lx-eBx"/>
+                            <constraint firstItem="ZjV-M8-CRj" firstAttribute="centerY" secondItem="qns-YF-cRT" secondAttribute="centerY" id="yyH-iC-Tn5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7zp-Ys-mOt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nni-y3-3gT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1378" y="-1032"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="Ej5-sI-4JQ">
             <objects>
@@ -59,6 +87,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRe-t0-gfB">
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showSheet:" destination="Isb-Np-0n0" eventType="touchUpInside" id="75Y-OO-eF5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,6 +99,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tlT-Ip-A9w"/>
                     </view>
+                    <connections>
+                        <outlet property="showSheetButton" destination="FRe-t0-gfB" id="69w-hQ-JQu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrw-nK-2g7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

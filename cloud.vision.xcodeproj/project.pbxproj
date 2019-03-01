@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C16AED2222849600A7D590 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C16AEC2222849600A7D590 /* BottomSheetViewController.swift */; };
 		3B1C661221F85D66009E8BD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1C661121F85D66009E8BD7 /* UIKit.framework */; };
 		3B51CB1A21F85CA5000CA5C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B51CB1921F85CA5000CA5C9 /* HomeViewController.swift */; };
 		3BC29B0B21E4758300593D76 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC29B0A21E4758300593D76 /* CameraViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29C16AEC2222849600A7D590 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		3B1C661121F85D66009E8BD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3B51CB1921F85CA5000CA5C9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3BC29B0A21E4758300593D76 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				3B51CB1921F85CA5000CA5C9 /* HomeViewController.swift */,
+				29C16AEC2222849600A7D590 /* BottomSheetViewController.swift */,
 				3BC6B2FD213F5A8E00DE3FAB /* AppDelegate.swift */,
 				3BC6B2FF213F5A8E00DE3FAB /* ViewController.swift */,
 				3BC29B0A21E4758300593D76 /* CameraViewController.swift */,
@@ -183,6 +186,7 @@
 				3BC29B0B21E4758300593D76 /* CameraViewController.swift in Sources */,
 				3BC6B300213F5A8E00DE3FAB /* ViewController.swift in Sources */,
 				3BC6B2FE213F5A8E00DE3FAB /* AppDelegate.swift in Sources */,
+				29C16AED2222849600A7D590 /* BottomSheetViewController.swift in Sources */,
 				3B51CB1A21F85CA5000CA5C9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

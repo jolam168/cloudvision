@@ -8,13 +8,30 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    override func viewDidLoad() {
+	var bottomSheetVC = BottomSheetViewController()
+	@IBOutlet weak var showSheetButton: UIButton!
+	override func viewDidLoad() {
         super.viewDidLoad()
-
+		addBottomSheetView()
         // Do any additional setup after loading the view.
     }
     
-
+	func addBottomSheetView(scrollable: Bool? = true){
+		
+		
+		self.addChild(bottomSheetVC)
+		self.view.addSubview(bottomSheetVC.view)
+		bottomSheetVC.didMove(toParent: self)
+		
+		let height = view.frame.height
+		let width  = view.frame.width
+		bottomSheetVC.view.frame = CGRect(x: 0, y: self.view.frame.maxY, width: width, height: height)
+	}
+	
+	@IBAction func showSheet(_ sender: Any) {
+		bottomSheetVC.show()
+	}
+	
     /*
     // MARK: - Navigation
 
